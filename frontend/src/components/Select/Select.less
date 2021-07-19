@@ -1,0 +1,48 @@
+@import '../common/color';
+
+.corelab-select {
+  > .ant-typography {
+    text-align: left;
+    display: flex;
+    text-indent: 10px;
+  }
+  .ant-select {
+    width: 100%;
+
+    .ant-select-selector {
+      border: 1px solid @black-200;
+      background: @white 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 0px @shadow;
+      border-radius: 6px;
+    }
+    
+    &.ant-select-focused {
+      &:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: 1px solid @primary;
+        box-shadow: 0px 2px 0px @shadow;
+        border: 1px solid @primary;
+      }
+
+      .anticon {
+        color: @black-300;
+      }
+    }
+
+    .anticon {
+      color: @black-700;
+    }
+
+    &:not(.ant-select-disabled):hover .ant-select-selector {
+      border-color: @primary;
+    }
+  }  
+}
+
+.corelab-dropdown {
+  .ant-select-item-option-selected {
+    background-color: @black-200;
+  }
+  .ant-select-item-option-active {
+    background-color: @black-300;
+  }
+}

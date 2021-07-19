@@ -1,0 +1,55 @@
+@import '../common/color';
+
+.corelab-choice {
+  display: inline-flex;
+
+  .ant-radio-button-wrapper-checked {
+    img {
+      filter: grayscale(0%)!important;
+    }
+
+    &:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child {
+      border-right-color: @primary;
+    }
+  
+    &:not(.ant-radio-button-wrapper-disabled) {
+      color: @primary;
+      border-color: @primary;
+      border-left: @primary;
+      border: 1px solid @primary;
+    }
+  }
+  
+  .ant-radio-button-wrapper {
+    width: 270px;
+    height: 270px;
+    //padding-top: 100px;
+    //padding-bottom: 130px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+    border-radius: 6px;
+    border-left-width: 1px;
+    color: @black-300;
+
+    vertical-align: middle;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:not(:first-child)::before{
+      display: none;
+    }
+
+    .anticon, img {
+      width: 100%;
+    }
+
+    img {
+      filter: grayscale(100%);
+    }
+  }
+}

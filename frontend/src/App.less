@@ -1,0 +1,35 @@
+@import '~antd/dist/antd.less';
+@import './components/common/color';
+@primary-color: @primary;
+
+.App {
+  .ant-layout-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    background-color: @white;
+    margin-top: 80px;
+  }
+  .ant-layout-content > .ant-row { 
+      width: 100%;
+  }
+  
+}
+
+.ant-layout {
+  background: @white!important;
+}
+.ant-input-affix-wrapper-lg {
+  padding: 15px 11px;
+}
+
+.btn-next-step {
+  width: 220px;
+  height: 57px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+}

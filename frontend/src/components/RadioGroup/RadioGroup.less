@@ -1,0 +1,38 @@
+@import '../common/color';
+
+.corelab-radio__group {
+  width: 100%;
+
+  .corelab-text {
+    width: initial!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .ant-radio-wrapper {
+    border-radius: 6px;
+    border: 1px solid @black-200;
+    background: @white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px @shadow;
+
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .ant-radio:hover .ant-radio-inner {
+    border: 1px solid @primary!important;
+  }
+  .ant-radio-checked {
+    .ant-radio-inner {
+      background-color: @primary;
+      &::after {
+        background-color: @white;
+      }
+      border: 1px solid @primary!important;
+    }
+  }
+}

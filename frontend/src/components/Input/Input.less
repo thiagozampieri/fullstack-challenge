@@ -1,0 +1,29 @@
+@import '../common/color';
+
+.corelab-input {
+  > .ant-typography {
+    text-align: left;
+    display: flex;
+    text-indent: 10px;
+  }
+  .ant-input-affix-wrapper {
+    border: 1px solid @black-200;
+    background: @white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px @shadow;
+    border-radius: 6px;
+
+    &.ant-input-affix-wrapper-focused, &:hover {  
+      border: 1px solid @primary;
+      box-shadow: 0px 2px 0px @shadow;
+      border: 1px solid @primary;
+  
+      .anticon {
+        color: @black-300;
+      }
+    }
+
+    .anticon {
+      color: @black-700;
+    }
+  }  
+}

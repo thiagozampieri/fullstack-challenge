@@ -1,0 +1,89 @@
+@import '../common/color';
+
+.corelab-inputnumber {
+
+  &:hover {
+    .ant-input-group-addon:first-child {
+      border-top: 1px solid @primary!important;
+      border-left: 1px solid @primary!important;
+      border-bottom: 1px solid @primary!important;
+    }
+    .ant-input {
+      border-top: 1px solid @primary;
+      border-right: 1px solid @primary;
+      border-bottom: 1px solid @primary;
+    }
+  }
+  .ant-input {
+    border: 1px solid @black-200;
+    border-right: 0px;
+    background: @white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px @shadow;
+    border-radius: 6px;
+
+    &.ant-input-focused, &:hover {  
+      border: 1px solid @primary;
+      box-shadow: 0px 2px 0px @shadow;
+      border: 1px solid @primary;
+  
+      .anticon {
+        color: @black-300;
+      }
+    }
+
+    .anticon {
+      color: @black-700;
+    }
+  }
+  .ant-input-group {
+    .ant-input-group-addon {
+      &:first-child {
+        border-top: 1px solid @black-200;
+        border-bottom: 1px solid @black-200;
+        border-left: 1px solid @black-200;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+
+      &+ input {
+        // border-right: 0px;
+        border-left: 0px;
+      }
+    }
+  }
+
+  .ant-input-group-addon {
+    background-color: @white;
+
+    &:last-child {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top: 1px solid @black-200;
+      border-bottom: 1px solid @black-200;
+      border-right: 1px solid @black-200;
+      background: @white 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 0px @shadow;
+    }
+
+    .corelab-button-element {
+      border-left: 1px solid @black-200;
+    }
+
+    .ant-input {
+      border: 0px;
+      float: none;
+      width: 30%;
+      
+      &.focus-visible {
+        border: 0px;
+        border-radius: 0px;
+        box-shadow: 0px;
+      }
+    }
+    .ant-btn-link:enabled {
+      color: @primary;
+    }
+  }
+
+
+}
